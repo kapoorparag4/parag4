@@ -36,7 +36,10 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a 2-line script
-        run: echo ${{ secrets.SECRET1 }}
+        run: echo ${{ secrets.S1 }}
         
       - name: Run a 3-line script
-        run: echo ${{ vars.VAR1 }}
+        run: echo ${{ vars.V1 }}
+
+      - name: Run a 3-line script
+        run: echo ${{ vars.V2 }}
